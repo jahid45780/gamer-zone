@@ -76,6 +76,10 @@
    
 
 }
+.bts{
+    display: flex;
+    gap: 6px;
+}
 .btn-go{
     background-color: rgb(51, 187, 221);
     color: white;
@@ -147,32 +151,251 @@
 
 /* online games styles end */
 
-/* Responsive Media Quri*/
-/* Moblie divices */
-@media screen and (max-width:576px ){
-  .navbar, .banner, .navbar-title {
-    flex-direction: column;
-  }
-
-  
-  .banner-img img{
-    height:  300px ;
-    width: 300px ; 
-  }
-
-  .box-container{
-    grid-template-columns: repeat(1, 0.1fr);
-    height: 100px;
-
-  }
+.play-instantly{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.play-instantly-img img{
+    height: 430px;
+    width: 400px;
+}
+.play-instantly-titile h2{
+    font-size: 3rem;
+}
+.play-instantly-titile p{
+    color: rgba(31, 29, 29, 0.774);
+}
+.play-instantly-icon img{
+    height: 190px;
+    width: 150px;
+    position: relative;
+    bottom: 90px;
+    right: 60px;
 
 }
 
-/* tablet divices */
-@media screen and (min-width:576px) and (max-width:960px){
+/* play-instantly end  */
 
-    .box-container{
-        grid-template-columns: repeat(2, 0.1fr);
+
+.action-games,  button{
+    padding: 10px; 
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+
+}
+
+
+.action-games{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+    justify-content: center;
+    margin: 40px;
+    margin-top: 0px;
+   
+}
+button:hover{
+    border: 1px solid black;
+    color: whitesmoke;
+    cursor: progress;
+}
+
+/* heare the footer styles */
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    height: 300x;
+}
+.footer-game{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+}
+.footer-list{
+    display: grid;
+    grid-template-columns: repeat(6, 0.1fr);
+    margin-left: 50px;
+    margin-right: 50px;
+    list-style: none;
+    justify-content: center;
+}
+.footer-sosal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 20px;
+
+}
+.footer-sosal img{
+    height: 40px;
+    width: 40px;
+
+}
+
+.footer-para{
+    display: grid;
+    grid-template-columns: repeat(4,0.1fr);
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: aliceblue;
+    
+}
+
+.footer-end-para{
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: 15px;
+}
+
+
+
+
+/* Responsive Media Quri*/
+/* Moblie divices */
+@media screen and (max-width:576px ) {
+    .navbar, .navbar-title,.banner,.play-instantly {
+       flex-direction: column;
     }
 
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat( 1, 0.1fr );
+         gap: 20px; 
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+    .action-games {
+        display: grid;
+        grid-template-columns: repeat(2,00.1fr);
+        margin: 10px;
+    }
+  
+    .footer-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 20px;
+        margin-right: 20px;
+        list-style: none;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-para{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: aliceblue;
+        position: relative;
+        left: 20px;
+        
+    }
+  
+
+
+    .action-games,  button{
+        padding: 5px; 
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 5px;
+        border-radius: 19px;
+    
+    
+    }
+
+    
+    .banner-img img{
+        height:  300px ;
+        width: 300px ; 
+        margin: 30px;
+    }
+
+    .play-instantly-img img{
+        height: 330px;
+        width: 300px;
+    }
+
+    .play-instantly-icon img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+       bottom: 70px;
+       right: 30px;
+    
+    }
+
+    .play-instantly-titile h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .play-instantly-titile p{
+        color: rgba(31, 29, 29, 0.774);
+        text-align: center;
+    }
+
+    
+
+    }
+
+    /* tablet or midiyem divices */
+@media screen and (min-width:576px) and (max-width:960px) {
+  
+    .navbar, .navbar-title,.banner,.play-instantly {
+        flex-direction: column;  
+     }
+
+     .box-container{
+        display: grid;
+        grid-template-columns: repeat( 2, 0.1fr );
+         gap: 20px; 
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+    .action-games{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 20px;
+        margin-right: 20px;
+        list-style: none;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+        left: 80px;
+    }
+
+    .footer-para{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: aliceblue;
+        position: relative;
+        left: 90px;
+        
+    }
+
+    
 }
