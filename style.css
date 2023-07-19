@@ -1,0 +1,111 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-icon h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.navbar-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.samp-m{
+    color: rgb(253, 5, 171);
+}
+
+.navbar-icon img{
+    width: 80px;
+    height: 30px;
+    
+}
+
+.navbar-title{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    color: rgb(43, 42, 42);
+    align-items: center;
+}
+.btn-maun img{
+ width: 30px;
+ height: 20px ;
+}
+.btn-maun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* end styles navbar */
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.959);
+    
+    
+}
+
+.banner-title p {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+.banner-title h1{
+    font-size:3.7rem;
+    color: rgba(32, 32, 202, 0.89);
+}
+.list{
+    list-style: none;
+    padding: 4px;
+    color: rgb(43, 42, 42);
+}
+.btn-sign{
+   background-color: rgb(221, 76, 51);
+   color: white;
+   padding: 15px ;
+   border-radius: 20px;
+   margin: 5px;
+   
+
+}
+.btn-go{
+    background-color: rgb(51, 187, 221);
+    color: white;
+    padding: 15px ;
+    border-radius: 20px;
+    margin: 5px;  
+}
+.banner-img img{
+    height:  600px ;
+    width: 600px ; 
+}
+
+/* Responsive Media Quri*/
+/* Moblie divices */
+@media screen and (max-width:576px ){
+  .navbar, .banner, .navbar-title {
+    flex-direction: column;
+  }
+
+  .banner-img img{
+    height:  300px ;
+    width: 300px ; 
+  }
+
+
+}
+
+/* tablet divices */
+@media screen and (min-width:576px) and (max-width:960px){
+
+
+
+}
