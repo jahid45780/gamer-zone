@@ -88,6 +88,65 @@
     width: 600px ; 
 }
 
+/* online game titles styles */
+
+
+.online-Games{
+    text-align: center;
+    margin: 70px;
+}
+.online-Games-title h2{
+    font-size: 2rem;
+}
+.span-games{
+    color: rgb(40, 61, 155);
+}
+.online-Games-title p {
+    color: rgba(31, 29, 29, 0.774);
+}
+
+/* onlone  games box styles */
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat( 4, 0.1fr );
+     gap: 20px; 
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+
+.box-contect img {
+    width: 240px;
+    height: 270px;
+}
+.box-contect p{
+    color: rgba(31, 29, 29, 0.774); 
+}
+
+.box-icon{
+    position: relative;
+    bottom: 220px;
+    text-align: center;
+}
+
+.box-icon p{
+    color: red;
+    font-size: 1rem;
+}
+
+.box-icon img {
+    height: 30px;
+    width: 30px;
+ }
+.box-contect img:hover{
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+/* online games styles end */
+
 /* Responsive Media Quri*/
 /* Moblie divices */
 @media screen and (max-width:576px ){
@@ -95,17 +154,25 @@
     flex-direction: column;
   }
 
+  
   .banner-img img{
     height:  300px ;
     width: 300px ; 
   }
 
+  .box-container{
+    grid-template-columns: repeat(1, 0.1fr);
+    height: 100px;
+
+  }
 
 }
 
 /* tablet divices */
 @media screen and (min-width:576px) and (max-width:960px){
 
-
+    .box-container{
+        grid-template-columns: repeat(2, 0.1fr);
+    }
 
 }
